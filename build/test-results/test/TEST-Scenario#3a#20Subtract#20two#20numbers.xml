@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Subtract two numbers" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-19T17:57:29" hostname="NORMANP1DU" time="0.007">
+  <properties/>
+  <testcase name="Given the input &quot;9-4&quot;" classname="Scenario: Subtract two numbers" time="0.0"/>
+  <testcase name="When the calculator is run" classname="Scenario: Subtract two numbers" time="0.0"/>
+  <testcase name="Then the output should be &quot;5&quot;" classname="Scenario: Subtract two numbers" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Subtract two numbers" time="0.01"/>
+  <system-out><![CDATA[
+  Scenario: Add two numbers       ?[90m# adding.feature:3?[0m
+    ?[32mGiven ?[0m?[32mthe input "?[0m?[32m?[1m2+2?[0m?[32m"?[0m         ?[90m# add_steps.groovy:12?[0m
+    ?[32mWhen ?[0m?[32mthe calculator is run?[0m    ?[90m# add_steps.groovy:16?[0m
+    ?[32mThen ?[0m?[32mthe output should be "?[0m?[32m?[1m4?[0m?[32m"?[0m ?[90m# add_steps.groovy:21?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,94 @@
+import static cucumber.api.groovy.EN.*
+import cucumber.api.PendingException
+//import groovyx.net.http.HTTPBuilder
+import static groovyx.net.http.HttpBuilder.configure
+import static groovyx.net.http.ContentTypes.*
+//import static groovyx.net.http.Method.*
+//import static groovyx.net.http.OkHttpBuilder
+import groovyx.net.http.*
+import static groovyx.net.http.util.SslUtils.ignoreSslIssues
+import groovy.json.JsonSlurper
+
+
+	
+    Given(~/^I am an authenticated user$/) { ->
+	String username = 'PhilNorman2'
+	String password = 'Allie100'
+
+def github = configure {
+    ignoreSslIssues execution
+    request.uri = 'https://api.github.com'
+    request.setContentType('application/json')
+//    request.auth.basic '${username)', '$(password)'
+request.auth.basic('PhilNorman2', 'Allie100', false)
+}get{
+//def response = http.get{
+request.uri.path = '/user/repos'
+println "github request:" + request.dump()
+//request.uri.path = '/'
+/*
+    response.when(401) {
+        println "401"
+        println "github request:" + request.dump()
+        println "github response:" + response.dump()
+    	}
+    response.success { 
+        println "200"
+        println "github request:" + request.dump()
+        println "github response:" + response.dump()
+  	}
+    response.when(403) {
+        println "403"
+	}
+    response.failure{
+	println "failure"
+	}
+*/
+    }
+	println "Done with first get"
+
+assert github != null
+println github.dump()
+println "current user url: ${github.current_user_url}"
+
+def astros = configure {
+    request.uri = 'http://api.open-notify.org/astros.json'
+}.get()
+
+println astros.dump()
+println "attempting to print astros.number"
+println "There are ${astros.number} astronauts in space right now."
+println "Message: ${astros.message}" 
+
+astros.people.each { p->
+    println " - ${p.name} (${p.craft})"
+}
+
+def github2 = configure {
+    request.uri = 'https://api.github.com'
+}.get ()
+
+        assert github2 != null
+	println github2.dump()
+	println "attempt to get data from body"
+        println "email urls: ${github2.emails_url}"
+	//println ${github2}
+	println "post attempt"
+
+    }
+
+    When(~/^I create the "([^"]*)" repository$/) { String arg1 ->
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException()
+    }
+
+    When(~/^I request a list of my repositories$/) { ->
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException()
+    }
+
+    Then(~/^The results should include a repository name "([^"]*)"$/) { String arg1 ->
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException()
+    }
+

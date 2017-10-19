@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Add two numbers" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-19T17:57:29" hostname="NORMANP1DU" time="0.015">
+  <properties/>
+  <testcase name="Given the input &quot;2+2&quot;" classname="Scenario: Add two numbers" time="0.001"/>
+  <testcase name="When the calculator is run" classname="Scenario: Add two numbers" time="0.0"/>
+  <testcase name="Then the output should be &quot;4&quot;" classname="Scenario: Add two numbers" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Add two numbers" time="0.152"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

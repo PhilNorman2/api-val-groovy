@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: I want to know when something happens with this repository" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-19T17:57:32" hostname="NORMANP1DU" time="0.527">
+  <properties/>
+  <testcase name="Given I am an authenticated user" classname="Scenario: I want to know when something happens with this repository" time="0.0"/>
+  <testcase name="And I have a repository called &quot;monkey&quot;" classname="Scenario: I want to know when something happens with this repository" time="0.001"/>
+  <testcase name="When I watch the &quot;monkey&quot; repository" classname="Scenario: I want to know when something happens with this repository" time="0.0"/>
+  <testcase name="Then The &quot;monkey&quot; repository will list me as a watcher" classname="Scenario: I want to know when something happens with this repository" time="0.0"/>
+  <testcase name="And I delete the repository called &quot;monkey&quot;" classname="Scenario: I want to know when something happens with this repository" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: I want to know when something happens with this repository" time="0.685"/>
+  <system-out><![CDATA[Given I am an authenticated user
+PhilNorman2
+groovyx.net.http.JavaHttpBuilder@17d190c
+[:]
+<groovyx.net.http.JavaHttpBuilder@17d190c config=groovyx.net.http.HttpConfigs$ThreadSafeHttpConfig@aae9a3 executor=groovyx.net.http.HttpObjectConfigImpl$SingleThreaded@174f19a sslContext=javax.net.ssl.SSLContext@d3d359 proxyInfo=null hostnameVerifier=groovyx.net.http.util.SslUtils$$Lambda$24/23280439@5ce2ac clientConfig=groovyx.net.http.HttpObjectConfigImpl$ClientConfig@abb7e5 interceptors=[GET:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, POST:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, PUT:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, HEAD:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, DELETE:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, PATCH:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, OPTIONS:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, TRACE:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc] cookieManager=java.net.CookieManager@149924a>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

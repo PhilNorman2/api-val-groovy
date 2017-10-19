@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: I need a new repository" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-10-19T17:57:30" hostname="NORMANP1DU" time="1.096">
+  <properties/>
+  <testcase name="Given I am an authenticated user" classname="Scenario: I need a new repository" time="0.0"/>
+  <testcase name="When I create the &quot;monkey&quot; repository" classname="Scenario: I need a new repository" time="0.0"/>
+  <testcase name="And I request a list of my repositories" classname="Scenario: I need a new repository" time="0.0"/>
+  <testcase name="Then The results should include a repository name &quot;monkey&quot;" classname="Scenario: I need a new repository" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: I need a new repository" time="1.948"/>
+  <system-out><![CDATA[Given I am an authenticated user
+PhilNorman2
+groovyx.net.http.JavaHttpBuilder@17d190c
+[:]
+<groovyx.net.http.JavaHttpBuilder@17d190c config=groovyx.net.http.HttpConfigs$ThreadSafeHttpConfig@aae9a3 executor=groovyx.net.http.HttpObjectConfigImpl$SingleThreaded@174f19a sslContext=javax.net.ssl.SSLContext@d3d359 proxyInfo=null hostnameVerifier=groovyx.net.http.util.SslUtils$$Lambda$24/23280439@5ce2ac clientConfig=groovyx.net.http.HttpObjectConfigImpl$ClientConfig@abb7e5 interceptors=[GET:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, POST:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, PUT:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, HEAD:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, DELETE:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, PATCH:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, OPTIONS:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc, TRACE:groovyx.net.http.HttpObjectConfigImpl$Exec$$Lambda$23/27958394@ce63bc] cookieManager=java.net.CookieManager@149924a>
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

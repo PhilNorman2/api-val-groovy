@@ -1,0 +1,19 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+
+dependencies {
+	compile 'org.codehaus.groovy:groovy-all:2.4.12'
+	compile 'io.github.http-builder-ng:http-builder-ng-core:1.0.2'
+	//compile 'io.github.http-builder-ng:http-builder-ng-apache:1.0.2'
+	//compile 'io.github.http-builder-ng:http-builder-ng-okhttp:1.0.2'
+	//compile 'com.burgstaller:okhttp-digest:1.10'
+	testCompile 'junit:junit:4.12'
+	testCompile 'info.cukes:cucumber-groovy:1.2.5'
+	testCompile 'info.cukes:cucumber-junit:1.2.5'
+	}
+
