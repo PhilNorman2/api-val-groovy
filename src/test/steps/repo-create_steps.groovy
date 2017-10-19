@@ -6,7 +6,7 @@ import groovy.json.JsonSlurper
 
 class Globals{
         static String username = 'PhilNorman2'
-	static String password = 'Allie100'
+	static String password = ''
 	static String creds = "$username:$password".bytes.encodeBase64()
 	static github = configure {
     	    ignoreSslIssues execution
